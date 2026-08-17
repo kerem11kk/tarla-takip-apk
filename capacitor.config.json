@@ -1,5 +1,9 @@
 {
   "appId": "com.tarlatakip.app",
   "appName": "Tarla Takip",
-  "webDir": "dist"
+  "webDir": "www",
+  "server": {
+    "url": "https://tarla-takip-ve-navigasyon-umber.vercel.app/",
+    "cleartext": true
+  }
 }
