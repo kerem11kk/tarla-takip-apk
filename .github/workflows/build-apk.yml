@@ -26,6 +26,12 @@ jobs:
           mkdir -p www
           npx cap add android
 
+      - name: Inject Location Permissions
+        run: |
+          MANIFEST="android/app/src/main/AndroidManifest.xml"
+          sed -i '/<application/i \    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" \/>' $MANIFEST
+          sed -i '/<application/i \    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" \/>' $MANIFEST
+
       - name: Compile APK
         run: |
           cd android
