@@ -3,7 +3,7 @@
   "appName": "Tarla Takip",
   "webDir": "www",
   "server": {
-    "url": "https://tarla-takip-ve-navigasyon-umber.vercel.app/",
+    "url": "https://tarla-takip-ve-navigasyon.vercel.app/",
     "cleartext": true
   }
 }
